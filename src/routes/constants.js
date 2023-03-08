@@ -1,4 +1,4 @@
-export default {
+export const routes = {
     homePage :{title: 'Home', url: '/home'},
     projects: {title: 'Projects', url: '/projects'},
     photos: {title: 'Photos', url: '/photos'},

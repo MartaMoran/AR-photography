@@ -1,25 +1,16 @@
 import React from 'react';
-import {Route, MemoryRouter} from 'react-router-dom'
-import routes from './constants';
+import {routes} from './constants';
+import {Routes, Route} from 'react-router-dom'
 
 export function SwitchRoutes() {
   return (
-    <MemoryRouter>
-      <Route path={routes.home.url}>
-      <h1>home</h1>
-      </Route>
-      <Route exact path={routes.projects.url}>
-        <h1>projects</h1>
-      </Route>
-      <Route exact path={routes.photos.url}>
-        <h1>photos</h1>
-      </Route>
-      <Route exact path={routes.about.url}>
-        <h1>about</h1>
-      </Route>
-      <Route exact path={routes.contact.url}>
-        <h1>contact</h1>
-      </Route>
-    </MemoryRouter>
+    <Routes>
+      <Route path='/' element={<h1>home</h1>}/>
+      <Route path={routes.homePage.url} element={<h1>home</h1>} />
+      <Route path={routes.projects.url} element={<h1>projects</h1>}/>
+      <Route path={routes.photos.url} element={<h1>photos</h1>}/>
+      <Route path={routes.about.url} element={<h1>about</h1>}/>
+      <Route path={routes.contact.url} element={<h1>contact</h1>}/>
+    </Routes>
   );
 }
