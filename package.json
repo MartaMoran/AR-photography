@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "cosmicjs": "^4.3.1",
     "react": "^18.2.0",
+    "react-bootstrap-icons": "^1.10.2",
     "react-dom": "^18.2.0",
     "react-router": "^6.8.2",
     "react-router-dom": "^6.8.2",
