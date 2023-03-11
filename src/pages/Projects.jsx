@@ -1,36 +1,41 @@
 import React, { useEffect, useState } from 'react'
-import useSWR from "swr";
 import { Layout } from '../layout/Layout'
-import fetchPosts from '../services/api/apiConnection';
+import fetchImages from '../services/api/apiConnection';
+import { Europa } from './Europa';
 
 const Projects = () => {
     const [data, setData] = useState ('');
     useEffect(() => {
       const getData= async () => {
-        const result = await fetchPosts("posts");
-        console.log(result)
+        const result = await fetchImages("europa");
         setData(result);
+        
       };
       getData()
     }, []);
-    const posts = data.objects;
+    const posts = data.media;
     return (
         <>
         <Layout>
-        {data ?
-        
-        posts.map((post) => (
-            <div key={post.slug} style={{ marginBottom: 20 }}>
-              {post.metadata.hero && (
-                <div>
-                  <img alt="" src={`${post.metadata.hero.imgix_url}?w=400`} />
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
+            <div class="col">
+                <div class="card">
+                <img src="..." class="card-img-top" alt="..."/>
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Europa</h5>
                 </div>
-              )}
-              <div>{post.title}</div>
+                </div>
             </div>
-          ))
-          : <div>Loading...</div> }
-        
+            <div class="col">
+                <div class="card">
+                <img src="..." class="card-img-top" alt="..."/>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+        </div>
         </Layout>
         </>
     )
