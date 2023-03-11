@@ -7,15 +7,15 @@ const Homepage = () => {
     return (
         <>
         <Layout>
-            <div class="container text-center">
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 mt-4">
-                    <img src={homepageimg} class="img-fluid" alt="shadow of the photographer in the back of a man"/>
+            <div className="container text-center">
+                <div className="row justify-content-center">
+                    <div className="col-sm-6 mt-4">
+                    <img src={homepageimg} className="img-fluid" alt="shadow of the photographer in the back of a man"/>
                     </div>  
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col mt-5">
-                        <p class="fs-5 fw-bold">
+                <div className="row justify-content-center mt-5">
+                    <div className="col">
+                        <p className="fs-5 fw-bold">
                         "I live photographing the world to understand it, to understand me"
                         </p>
                     </div>
