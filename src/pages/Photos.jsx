@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Layout } from '../layout/Layout'
 import fetchImages from '../services/api/apiConnection';
 import {redirectRoutes} from '../routes/constants';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import './photos.css'
 
 const Photos = () => {
