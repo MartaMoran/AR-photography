@@ -1,0 +1,8 @@
+.carouselImg{
+    width: 51%;
+}
+@media screen and (max-width: 600px) {
+    .carouselImg{
+        width: 100%;
+    }
+  }
