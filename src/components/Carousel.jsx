@@ -5,7 +5,7 @@ export function Carousel (props) {
     const [images, setimages] = useState ('');
         useEffect(() => {
             setimages(props.props)
-          }, []);
+          }, [props.props]);
     return (
         <div className="row justify-content-center">
             {  images ? images.map((item, i) => (
