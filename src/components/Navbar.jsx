@@ -7,7 +7,7 @@ export function Navbar() {
   return (
     <nav className="navbar navbar-expand-sm backgroundNav">
       <div className="container-fluid">
-            <button className="navbar-toggler light mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <button className="navbar-toggler mb-2 light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
