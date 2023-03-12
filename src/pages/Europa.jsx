@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Carousel } from '../components/Carousel';
 import { Layout } from '../layout/Layout'
 import fetchImages from '../services/api/apiConnection';
-const Europa = (props) => {
+const Europa = () => {
     const [data, setData] = useState ('');
     useEffect(() => {
       const getData= async () => {
@@ -43,7 +43,12 @@ const Europa = (props) => {
                 </div>
                 <Carousel props={data}/>
                 </div>
-                : <div>loading</div>
+                : 
+                <div class="d-flex justify-content-center mt-5">
+                <div class="spinner-grow" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                </div>
             }
         
         </Layout>

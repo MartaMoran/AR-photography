@@ -44,7 +44,12 @@ const Lavapies = (props) => {
                 </div>
                 <Carousel props={data}/>
                 </div>
-                : <div>loading</div>
+                : 
+                <div class="d-flex justify-content-center mt-5">
+                <div class="spinner-grow" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                </div>
             }
         
         </Layout>
