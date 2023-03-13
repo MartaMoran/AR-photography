@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from '../layout/Layout'
-import aboutImg from "../images/aboutImg.jpg"
+import about from "../images/about.png"
 import { NavLink } from 'react-router-dom'
 import { redirectRoutes } from '../routes/constants'
 
@@ -12,7 +12,7 @@ const About = () => {
         <div className="container text-center">
                 <div className="row justify-content-center">
                     <div className="col-sm-3 mt-4">
-                    <img src={aboutImg} className="img-fluid" alt="photographer's selfie in a broken glass"/>
+                    <img src={about} className="img-fluid" alt="photographer's selfie in a broken glass"/>
                     </div>  
                 </div>
                 <div className="row justify-content-center">

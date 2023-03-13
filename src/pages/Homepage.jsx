@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from '../layout/Layout'
-import homepageimg from "../images/homepageimg.jpg"
+import portada from "../images/portada.png"
 
 const Homepage = () => {
 
@@ -10,7 +10,7 @@ const Homepage = () => {
             <div className="container text-center">
                 <div className="row justify-content-center">
                     <div className="col-sm-6 mt-4">
-                    <img src={homepageimg} className="img-fluid" alt="shadow of the photographer in the back of a man"/>
+                    <img src={portada} className="img-fluid" alt="shadow of the photographer in the back of a man"/>
                     </div>  
                 </div>
                 <div className="row justify-content-center mt-5">
